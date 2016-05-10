@@ -1,9 +1,8 @@
 package cc.fish.fishhttpdemo;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Button;
+import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,7 +10,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button btnGetJoke = (Button) findViewById(R.id.btn_get_joke);
-        btnGetJoke.setOnClickListener((v) -> startActivity(new Intent(this, JokeActivity.class)));
+        findViewById(R.id.btn_get_joke).setOnClickListener((v) -> startActivity(new Intent(this, JokeActivity.class)));
+        findViewById(R.id.btn_post).setOnClickListener((v)-> startActivity(new Intent(this, PostActivity.class)));
+        findViewById(R.id.btn_post_json).setOnClickListener((v)-> startActivity(new Intent(this, PostJsonActivity.class)));
     }
 }

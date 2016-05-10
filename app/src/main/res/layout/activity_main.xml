@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -11,9 +12,22 @@
     tools:context="cc.fish.fishhttpdemo.MainActivity">
 
     <Button android:id="@+id/btn_get_joke"
-        android:layout_width="100dp"
+        android:layout_width="200dp"
         android:layout_height="50dp"
         android:gravity="center"
         android:text="GET:JOKE"/>
 
-</RelativeLayout>
+    <Button android:id="@+id/btn_post"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="POST:FORM CONTENT"/>
+
+    <Button android:id="@+id/btn_post_json"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="POST:JSON CONTENT"/>
+
+
+</LinearLayout>
